@@ -5110,7 +5110,7 @@ app.get('/ott/mobileControler',function(req,res){
      	
 })
 
-
+////////////////////////////////////////////////////////////
 
 //大喇叭接口：TV端通知接口，后台编辑内容
 app.post('/ott/bigMessage',function(req,res){
