@@ -68,7 +68,7 @@ if(objConfig.appenders){
 log4js.configure(objConfig);  
 var logInfo = log4js.getLogger('logInfo');  
 //logInfo.info("测试日志信息");  
-//var log = log4js.getLogger("startup");
+
 
 
 var mongodbUtil = require('./util_mongodb.js'); //导入util_mongodb.js
@@ -5112,7 +5112,7 @@ app.get('/ott/mobileControler',function(req,res){
 
 
 
-//大喇叭接口
+//大喇叭接口：TV端通知接口，后台编辑内容
 app.post('/ott/bigMessage',function(req,res){
 	 //var userID = req["query"]["userID"] || ''
 	// var mac = req["query"]["mac"] || ''
@@ -5330,10 +5330,6 @@ var get_go3c_nodejs_conf = function get_go3c_nodejs_conf() {
     return conf;
 }
 
-/*调用刮刮卡导入接口*/
-//importguaguakadata();
-/*启动定时任务*/
-//timerTask.timerSchedule();
-//snapshotauto();
-/*定时20分钟拉取产品包*/
-//timerTask.timerScheduleForproduct_data();
+
+
+
