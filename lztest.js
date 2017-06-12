@@ -23,6 +23,10 @@ var DB_PORT = 27017; //数据库端口
 var DB_NAME = "chinaMobile20170327"; //数据库名
 var DB_CONN_STR = "mongodb://" + DB_HOST + ":" + DB_PORT + "/" + DB_NAME;
 
+
+/////////////////////////////////////////////////////////////////////////////
+
+
 app.use(bodyParser.json({ limit: '1mb' })); //这里指定参数使用 json 格式
 app.use(bodyParser.urlencoded({
     extended: true
