@@ -20,20 +20,7 @@ var log4js = require('log4js');
 var redis = require("redis");//redis发布订阅
 var request = require('request'); //xiaoliu add 2017-4-6
 
-/*log4js.configure({
-    "appenders": [
-        // 下面一行应该是用于跟express配合输出web请求url日志的  
-        { "type": "console", "category": "console" },
-        // 定义一个日志记录器  
-        {
-            "type": "file",
-            "filename": "logs/log.log",
-            "maxLogSize": 10485760,
-            "numBackups": 3
-        }
-    ],
-    "replaceConsole": true
-});*/
+
 
 // 加载配置文件  
 var objConfig = JSON.parse(fs.readFileSync("log4js.json", "utf8"));  
